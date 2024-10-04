@@ -13,7 +13,7 @@ export interface Env {
 		const { results } = await env.DB.prepare(
 		  "SELECT * FROM Customers WHERE CompanyName = ?",
 		)
-		  .bind("Bs Beverages")
+		  .bind("Around the Horn")
 		  .all();
 		return Response.json(results);
 	  }
